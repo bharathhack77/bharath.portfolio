@@ -1,1 +1,257 @@
-bharathkumar-tech.com
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bharath Kumar J M - Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: rgba(240, 244, 248, 1);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1, h2 {
+      font-family: 'Arial', sans-serif;
+      font-weight: normal;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, rgba(51, 51, 51, 0.9), rgba(0, 102, 204, 0.9), rgba(51, 153, 255, 0.8));
+      color: white;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      border-bottom: 5px solid rgba(51, 102, 255, 0.9);
+      animation: slideDown 0.8s ease-out;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .header p {
+      margin: 10px 0;
+      font-size: 1.1em;
+      opacity: 0;
+      animation: fadeInUp 1.2s ease-out 0.2s forwards;
+    }
+
+    /* Section Styles */
+    .section {
+      padding: 50px 30px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      margin: 25px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .section:nth-child(even) {
+      animation-delay: 0.5s;
+    }
+
+    /* Projects Section */
+    .projects ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .projects li {
+      padding: 15px;
+      margin-bottom: 20px;
+      background-color: rgba(0, 102, 204, 0.1);
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    .projects li:hover {
+      background-color: rgba(0, 102, 204, 0.3);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0, 102, 204, 0.2);
+    }
+
+    /* Skills Section */
+    .skills ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .skills li {
+      padding: 10px;
+      margin-bottom: 12px;
+      background-color: rgba(0, 204, 102, 0.1);
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    .skills li:hover {
+      background-color: rgba(0, 204, 102, 0.2);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 204, 102, 0.3);
+    }
+
+    /* Contact Section */
+    .contact a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact a:hover {
+      color: rgba(0, 102, 204, 0.8);
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .footer {
+      background: linear-gradient(135deg, rgba(51, 51, 51, 0.9), rgba(0, 102, 204, 0.9));
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-top: 5px solid rgba(51, 102, 255, 0.9);
+      animation: slideUp 0.8s ease-out;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2em;
+      }
+
+      .header p {
+        font-size: 1em;
+      }
+
+      .section {
+        padding: 25px;
+      }
+
+      .footer p {
+        font-size: 0.9em;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Bharath Kumar J M</h1>
+    <p>Tech Enthusiast | Cybersecurity Learner | Agriculture Innovator</p>
+  </div>
+
+  <!-- About Me -->
+  <div class="section about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm Bharath Kumar J M, a 19-year-old passionate about using technology to solve real-world problems.
+      I'm currently in my 3rd year of Computer Science Engineering and specialize in cybersecurity, AI, and sustainable innovation.
+    </p>
+  </div>
+
+  <!-- Projects -->
+  <div class="section projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>School Management System</strong> – A full-stack project to manage student, teacher, and admin workflows efficiently.</li>
+      <li><strong>Library Management System</strong> – A database-driven application to handle book inventories and borrower details.</li>
+      <li><strong>Cybersecurity Lab Projects</strong> – Includes penetration testing, firewall configuration, and defense-in-depth strategies.</li>
+    </ul>
+  </div>
+
+  <!-- Skills -->
+  <div class="section skills">
+    <h2>Skills</h2>
+    <h3>Back-end Development</h3>
+    <ul>
+      <li>C</li>
+      <li>C++</li>
+      <li>Java (Basic)</li>
+    </ul>
+    <h3>Web Development</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ul>
+  </div>
+
+  <!-- Contact -->
+  <div class="section contact">
+    <h2>Contact</h2>
+    <p>Phone: 6381050448</p>
+    <p>Email: <a href="mailto:kumarbharath@example.com">kumarbharath9537@example.com</a></p>
+    <p>Feel free to reach out to discuss tech, security, or collaboration opportunities!</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>© 2025 Bharath Kumar J M. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
